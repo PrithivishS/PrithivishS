@@ -232,3 +232,6 @@ ORC Stack Unwinder
 ------------------------
 
 
+When debugging kernel modules it is a prerequisite that the kernel has been compiled in with symbol and debug support. 
+Adding debug and symbol information for the kernel modules will not have much impact for debugging if the kernel was not a debug kernel. \
+
