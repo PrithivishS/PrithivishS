@@ -28,8 +28,12 @@ BCC  -->
 Ways to collect data
 Kprobes
 Ftrace
+   - trace-cmd
+   - kernelshark
+   - 
 perf_events
 LTTng Linux Trace Tools
+   - 
 eBPF 
 
 
