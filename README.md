@@ -213,7 +213,8 @@ Demand Paging Algorithm
                - If new item then fault brings in a physical page that can correspond to the virtual page that contains the  malloc
            
 
-   
 
+****
+sysctl kernel.panic_on_oops
 
 
