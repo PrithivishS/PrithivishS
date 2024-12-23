@@ -199,3 +199,7 @@ lttng start
 
 lttng stop
 lttng 
+
+
+-------------------------------------------
+TraceCompass Gui
