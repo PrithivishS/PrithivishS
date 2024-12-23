@@ -182,6 +182,8 @@ Kernel-Shark
 kernel-shark is a front end for tracefs
 
 
+Linutronix - Company started by Thomas Gliexner who has ported Linux to be an RTOS
+
 
 
 
