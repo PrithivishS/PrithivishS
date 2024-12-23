@@ -174,3 +174,8 @@ trace-cmd report -l
 trace-cmd report -l | wc -l
 less /tmp/history
 
+------------------------------------------------
+git clone https://github.com/kaiwan/trccmd.git  --> Trace cmd tool to help filter functions and events for debug
+
+
+
