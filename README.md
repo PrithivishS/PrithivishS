@@ -20,7 +20,9 @@ Day 2
 Core Linux Tracers: 
 Enabling Ftrace --> Which .config to look for 
 perf --> Profiling tool 
-BPF --> Berkeley Packet Filter 
+BPF --> Berkeley Packet Filter
+bpftrace --->
+BCC  --> 
 
 
 
