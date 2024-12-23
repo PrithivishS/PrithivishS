@@ -161,4 +161,16 @@ cp -iv ./trace /tmp/trace
 To redirect printk to ring buffer 
  echo z > /proc/sysrq-trigger
 
+Trace-cmd lab exercise
+--------------------------------------
+
+yum install trace-cmd --allowerasing
+record -p  function_graph -F ~amd/prithvi/L1_sysprg_trg/helloworld/helloworld
+trace-cmd record -p  function_graph -F ~amd/prithvi/L1_sysprg_trg/helloworld/helloworld
+cd ~amd/prithvi/L1_sysprg_trg/helloworld/
+trace-cmd record -p  function_graph -F helloworld
+trace-cmd record -p  function_graph -F ./helloworld
+trace-cmd report -l
+trace-cmd report -l | wc -l
+less /tmp/history
 
