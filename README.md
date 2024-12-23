@@ -217,4 +217,10 @@ Demand Paging Algorithm
 ****
 sysctl kernel.panic_on_oops
 
+The NULL Trap
+-------------------
+Entire page0 consisting of 4095 bytes is used by the compiler and the system as a null trap. 
+All pointers or references that are made in address range 0 to 4096 are considered faulty addresses (either directly null or derived from NULL) 
+
+
 
