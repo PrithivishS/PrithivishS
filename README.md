@@ -191,3 +191,11 @@ LTTng
 -----------------------------------
 Linux Tracing Tool Kit
 
+lttng enable-event --kernel sched_switch, sched_process_fork
+lttng 
+
+start
+lttng start
+
+lttng stop
+lttng 
