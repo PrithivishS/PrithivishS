@@ -163,7 +163,7 @@ To redirect printk to ring buffer
 
 Trace-cmd lab exercise
 --------------------------------------
-
+Trace-cmd is a front end 
 yum install trace-cmd --allowerasing
 record -p  function_graph -F ~amd/prithvi/L1_sysprg_trg/helloworld/helloworld
 trace-cmd record -p  function_graph -F ~amd/prithvi/L1_sysprg_trg/helloworld/helloworld
@@ -176,6 +176,7 @@ less /tmp/history
 
 ------------------------------------------------
 git clone https://github.com/kaiwan/trccmd.git  --> Trace cmd tool to help filter functions and events for debug
+
 
 
 
