@@ -208,9 +208,9 @@ Demand Paging Algorithm
 - User space application calling malloc
      -  vmalloc returns with an address that might correspond to an entry in the process's address space/ 
      -  If page not already in memory
-          - then page fault generated and mmu checks for the existence /range  of newly assigned memory objects 
+          - then page fault generated and mmu checks for the existence /range  of newly assigned memory objects. Checks for valid range.  
           - Page fault handler checks
-               - If new item then fault brings in a physical page that can correspond to the virtual page that contains the  malloc
+               - If new item then fault brings in a physical page that can correspond to the virtual page that contains the  malloc , if offset was validated above. 
            
 
 
