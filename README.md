@@ -247,7 +247,8 @@ addr2line a.out
 addr2line a.out
 vim
 gdb -q ./oops_tryv1.ko
-
+   -l *try_oops_init+0x7a
+../../../linux-6.5.9/scripts/**faddr2line** --list ./oops_tryv1.ko  try_oops_init+0x7a
 
 KASLR 
 ------
