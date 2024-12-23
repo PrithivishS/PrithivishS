@@ -210,7 +210,8 @@ Demand Paging Algorithm
      -  If page not already in memory
           - then page fault generated and mmu checks for the existence /range  of newly assigned memory objects. Checks for valid range.  
           - Page fault handler checks
-               - If new item then fault brings in a physical page that can correspond to the virtual page that contains the  malloc , if offset was validated above. 
+               - If new item then fault brings in a physical page that can correspond to the virtual page that contains the  malloc , if offset was validated above.
+               - 
            
 
 
@@ -221,6 +222,11 @@ The NULL Trap
 -------------------
 Entire page0 consisting of 4095 bytes is used by the compiler and the system as a null trap. 
 All pointers or references that are made in address range 0 to 4096 are considered faulty addresses (either directly null or derived from NULL) 
+
+Frame Pointer
+---------------------
+Compilers embed framepointers as link list to link all the stack pointers of previous calling functions
+It helps in unwinding the stack which helps in generating an accurate stack trace when debugging. 
 
 
 
