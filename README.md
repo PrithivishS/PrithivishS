@@ -202,4 +202,5 @@ lttng
 
 
 -------------------------------------------
-TraceCompass Gui
+TraceCompass Gui (www.tracecompass.org)
+
