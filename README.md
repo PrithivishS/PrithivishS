@@ -15,5 +15,13 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 
 Linux Debugging 
+Day 2 
+----------
+Core Linux Tracers: 
+Enabling Ftrace --> Which .config to look for 
+perf --> Profiling tool 
+BPF --> Berkeley Packet Filter 
+
+
 
 -->
