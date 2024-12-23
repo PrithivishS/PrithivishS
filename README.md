@@ -158,5 +158,7 @@ echo 1 > tracing_on ; ping -c 127.0.0.1   ; echo 0 > tracing_on
 echo 1 > tracing_on ; ping -c 5 127.0.0.1   ; echo 0 > tracing_on
 cp -iv ./trace /tmp/trace
 
+To redirect printk to ring buffer 
+ echo z > /proc/sysrq-trigger
 
 
