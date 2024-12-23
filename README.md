@@ -235,3 +235,19 @@ ORC Stack Unwinder
 When debugging kernel modules it is a prerequisite that the kernel has been compiled in with symbol and debug support. 
 Adding debug and symbol information for the kernel modules will not have much impact for debugging if the kernel was not a debug kernel. \
 
+addr2line
+----------------------
+addr2line ./oops_tryv1.ko
+addr2line oops_tryv1.ko
+cp oops_tryv1.ko
+cp oops_tryv1.ko a.out
+cp oops_tryv1.ko a.out
+addr2line a.out
+addr2line a.out
+addr2line a.out
+vim
+gdb -q ./oops_tryv1.ko
+
+
+KASLR 
+------
