@@ -36,6 +36,17 @@ LTTng Linux Trace Tools
    - 
 eBPF 
 
+Flame graph
+
+
+Where is ltrace useful in debugging
+- Multithreaded apps use the pthread library. Ltrace very useful for debugging multithreaded applications.
+- Ltrace can give you times and counts of library functions that are being used by the application
+   - giving a clue to which library call are taking lot of time and also bulk of time in % of time a function is comsuming.
+   - So it is like a user space profiler
+ 
+
+Strace: 
 
 
 -->
