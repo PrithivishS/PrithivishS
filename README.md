@@ -94,4 +94,69 @@ To debug KVM for AMD
 filter amd.ko + kvm.ko 
 
 
+command line history
+ echo 0 > tracing_on
+cat available_tracers
+echo function_graph > current_tracer
+echo 1 > tracing_on ; sleep 1 ; echo 0 > tracing_on
+cp trace /tmp/trace.txt
+ll trace
+cp -iv trace /tmp/trace.txt
+cp -iv per_cpu/cpu0/trace  /tmp/trace.txt
+less /tmp/trace.txt
+ls options/
+cat options/ function-proc
+echo 1 > options/function-proc
+echo 1 > options/funcgraph-proc
+echo 1 > tracing_on ; sleep 1 ; echo 0 > tracing_on
+cp -iv per_cpu/cpu0/trace  /tmp/trace.txt
+less /tmp/trace.txt
+history
+less /tmp/trace.txt
+ echo 1 > tracing_on ; sleep 1 ; echo 0 > tracing_on
+ ls
+ cd /sys/kernel/tracing/per_cpu/cpu0/
+ cd ..
+ cd ..
+ ;ls
+ ls
+ ls
+ ll trace
+ echo 1 > tracing_on ; /home/amd/prithvi/L1_sysprg_trg/helloworld  ; echo 0 > tracing_on
+ echo 1 > tracing_on ; /home/amd/prithvi/L1_sysprg_trg/helloworld/helloworld  ; echo 0 > tracing_on
+ less trace
+ cp -iv trace /tmp/trace
+ cp -iv ./trace /tmp/trace
+ less trace
+ ll trace
+ cp -iv ./trace /tmp/trace
+ less /tmp/trace
+ less trace
+ ll /tmp/trace
+ du -h /tmp/trace
+ less trace
+ echo 1 > tracing_on ; /home/amd/prithvi/L1_sysprg_trg/helloworld/helloworld  ; echo 0 > tracing_on
+ cp -iv ./trace /tmp/trace
+ du -h /tmp/trace
+ less  /tmp/trace
+ cat available_filter_functions | less
+ cat available_filter_functions | wc -l
+ pwd
+ lsmod | grep e*
+ lsmod | grep e1*
+yum install trace-cmd
+trace-cmd
+trace-cmd reset
+echo ":mod:nft_fib_inet"  > set_ftrace_filter
+ls
+ll funcgraph
+echo 1 > tracing_on ; ping -t yahoo.com   ; echo 0 > tracing_on
+echo 1 > tracing_on ; ping -t 127.0.0.1   ; echo 0 > tracing_on
+echo 1 > tracing_on ; ping  127.0.0.1   ; echo 0 > tracing_on
+echo function_graph > current_tracer
+echo 1 > tracing_on ; ping -c 127.0.0.1   ; echo 0 > tracing_on
+echo 1 > tracing_on ; ping -c 5 127.0.0.1   ; echo 0 > tracing_on
+cp -iv ./trace /tmp/trace
+
+
 
