@@ -54,5 +54,38 @@ Strace can show you that the linux loader i.e. ld.so memory maps the glibc for a
 
 Strace depends upon debugfs 
 - To verify look at the path /sys/kernel/debug/tracing
-- 
+   - Can also be verified by checking tracefs by
+      -  mount | grep tracefs
+      -  mount point is  /sys/kernel/debug/tracing      
 
+
+Some of the commands that I used for lab exercise
+--------------------------------------------------
+ls /sys/kernel/tracing/per_cpu/cpu0/
+cat trace
+pwd
+cd /sys/kernel/tracing/per_cpu/cpu0/
+ls
+less trace
+pwd
+cd ../../
+ echo 0 > tracing_on
+cat available_tracers
+echo function_graph > current_tracer
+echo 1 > tracing_on ; sleep 1 ; echo 0 > tracing_on
+cp trace /tmp/trace.txt
+ll trace
+cp -iv trace /tmp/trace.txt
+cp -iv per_cpu/cpu0/trace  /tmp/trace.txt
+less /tmp/trace.txt
+ls options/
+cat options/ function-proc
+echo 1 > options/function-proc
+echo 1 > options/funcgraph-proc
+
+echo 1 > tracing_on ; sleep 1 ; echo 0 > tracing_on
+cp -iv per_cpu/cpu0/trace  /tmp/trace.txt
+less /tmp/trace.txt
+
+End of lab exercise
+--------------------------------------------------
