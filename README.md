@@ -50,3 +50,5 @@ Strace:
 
 
 -->
+Strace can show you that the linux loader i.e. ld.so memory maps the glibc for any running process into the processes address space to enable the direct calling. 
+
