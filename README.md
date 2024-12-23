@@ -25,5 +25,13 @@ bpftrace --->
 BCC  --> 
 
 
+Ways to collect data
+Kprobes
+Ftrace
+perf_events
+LTTng Linux Trace Tools
+eBPF 
+
+
 
 -->
