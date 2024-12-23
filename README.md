@@ -89,3 +89,9 @@ less /tmp/trace.txt
 
 End of lab exercise
 --------------------------------------------------
+
+To debug KVM for AMD 
+filter amd.ko + kvm.ko 
+
+
+
