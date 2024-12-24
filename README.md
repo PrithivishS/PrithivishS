@@ -294,6 +294,13 @@ checking for CONFIG_RELOCATABLE       [OK]
 
 sudo dnf install crash
 
+crash help
+   >vtop
+   >task
+   >file
+   >files
+   >  
+
 
 
 
