@@ -338,9 +338,57 @@ https://github.com/iovisor/bcc
 https://github.com/brendangregg/perf-tools
 
 
-Kprobes
+Kprobes  - Dynamic Probes
 -------------
 
+PLanting kprobes
+----------------------
+1) Planting a pre handler to k_foo()
+2) Planting a post handler to k_foo()
+3) Kretprobe
+4) jumper probe - deprecated.
 
+   
+
+ls /sys/kernel/debug/kprobes 
+cat /sys/kernel/debug/kprobes/enabled
+cat /sys/kernel/debug/kprobes/blacklist
+cat /sys/kernel/debug/kprobes/list
+
+Kaiwans kprobe module creates a virtual module that uses pr_debug for entered function name. 
+
+Brendan Tool 
+kprobe-perf 
+
+Heartbleed bug 
+xkcd 
+
+
+Kmemleak
+--------------
+KASAN does not detect UMR ---> Uninitialized Memory Reads
+Kmemleak is a kthread. 
+What is a kthread
+
+Shadow Memory Reports from ASAN and KASAN 
+
+CONFIG_STACKTRACE=y
+
+kASAN is very costly and cannot be run on production 
+
+KFENCE is usually run on production
+
+KCSAN_datarace 
+
+Shadow Memory
+-------------------
+Shadow memory map 
+KASAN uses 1 byte of shadow memory to track 8 bytes of actual memory
+Learn to interpret the shadow memory map 
+
+
+CTI --> Compile time instrumentation 
+
+Mythical Man month
 
 
