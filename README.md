@@ -292,6 +292,7 @@ checking for CONFIG_CRASH_DUMP        [OK]
 checking for CONFIG_PROC_VMCORE       [OK]
 checking for CONFIG_RELOCATABLE       [OK]
 
+sudo dnf install crash
 
 
 
