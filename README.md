@@ -282,4 +282,6 @@ CONFIG_KEXEC_JUMP=y
 CONFIG_KEXEC_CORE=y
 [amd@localhost linux-6.5.9]$
 
+Add command line parameter in file /etc/grub
+
 
