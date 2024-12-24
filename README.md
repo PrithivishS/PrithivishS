@@ -324,4 +324,23 @@ sudo gdb -c /proc/kcore ~/prithvi/linux-6.5.9/vmlinux
 type b for breakpoint
 - By default config target kernel to CONFIG_NO_STRICT_RWX as software break points are going to imject int 3 statements into the code to pause the processor
 - In addition one can use hb for placing hardware breakpoints
-- 
+
+Tracing Events 
+-------------------------
+ls /syskernel/tracing/events
+cat /syskernel/tracing/events/irq/enable
+
+Perf-Tools
+---------------
+Brendan Gregg Perf Tools repo. 
+sudo yum install bpftrace
+https://github.com/iovisor/bcc
+https://github.com/brendangregg/perf-tools
+
+
+Kprobes
+-------------
+
+
+
+
