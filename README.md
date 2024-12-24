@@ -301,7 +301,11 @@ crash help
    >files
    >  
 
+Running crash in batch mode (i.e. non interactive mode)
 
+Module debugging with crash
+crash: 
+   > mod -S    
 
 
 
