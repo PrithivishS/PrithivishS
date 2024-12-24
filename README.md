@@ -307,5 +307,5 @@ Module debugging with crash
 crash: 
    > mod -S    
 
-
+echo l > /proc/sysrq/trigger
 
