@@ -282,6 +282,18 @@ CONFIG_KEXEC_JUMP=y
 CONFIG_KEXEC_CORE=y
 [amd@localhost linux-6.5.9]$
 
-Add command line parameter in file /etc/grub
+Add command line parameter in file /etc/default/grub
+checking for CONFIG_KEXEC             [OK]
+checking for CONFIG_KEXEC_CORE        [OK]
+checking for CONFIG_CRASH_CORE        [OK]
+checking for CONFIG_SYSFS             [OK]
+checking for CONFIG_DEBUG_INFO        [OK]
+checking for CONFIG_CRASH_DUMP        [OK]
+checking for CONFIG_PROC_VMCORE       [OK]
+checking for CONFIG_RELOCATABLE       [OK]
+
+
+
+
 
 
