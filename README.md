@@ -309,3 +309,19 @@ crash:
 
 echo l > /proc/sysrq/trigger
 
+echo "number"> /proc/sys/kernel/sysrq
+
+How does Int 3 work ?
+
+Kernel debugging using kgdb. 
+
+Target kernel runs gdbserver <------------------> User kernel runs gdbclient 
+
+original ldd book created gdbline.sh to automate loading sysbols, and sections for investigation by gdb for modules that are not compiled into the static kernel
+
+sudo gdb -c /proc/kcore ~/prithvi/linux-6.5.9/vmlinux
+
+type b for breakpoint
+- By default config target kernel to CONFIG_NO_STRICT_RWX as software break points are going to imject int 3 statements into the code to pause the processor
+- In addition one can use hb for placing hardware breakpoints
+- 
