@@ -256,5 +256,12 @@ KASLR
 
 DAY 3
 ------------
+Kdump 
+Allows to dump kernel into a ram location with specified size and location
+in the dump kernel there is a file called /proc/vmcore which is RAM content of the original kernel.  There are tools that can give you an insight of the ram content
+copy the content of the /proc/vmcore onto storage for analysis.  Crash is the tool that allows to inspect the kernel dump image. 
 
+There are two ways to boot 
+- Using keys
+- Using Kexec -- Allows for a warm boot. Retaining the contents of RAM.
 
