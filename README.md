@@ -265,3 +265,21 @@ There are two ways to boot
 - Using keys
 - Using Kexec -- Allows for a warm boot. Retaining the contents of RAM.
 
+To check if the kernel that you are going to build is going to be relocatable for crash debugging the following CONFIG FLAGS should be present in the .config 
+of the built kernel
+
+[amd@localhost prithvi]$ cd linux-6.5.9/
+[amd@localhost linux-6.5.9]$ grep CONFIG_SYSFS .config
+CONFIG_SYSFS_SYSCALL=y
+CONFIG_SYSFS=y
+[amd@localhost linux-6.5.9]$ grep CONFIG_KEXEC .config
+CONFIG_KEXEC=y
+CONFIG_KEXEC_FILE=y
+CONFIG_KEXEC_SIG=y
+CONFIG_KEXEC_SIG_FORCE=y
+CONFIG_KEXEC_BZIMAGE_VERIFY_SIG=y
+CONFIG_KEXEC_JUMP=y
+CONFIG_KEXEC_CORE=y
+[amd@localhost linux-6.5.9]$
+
+
