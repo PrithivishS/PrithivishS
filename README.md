@@ -252,3 +252,9 @@ gdb -q ./oops_tryv1.ko
 
 KASLR 
 ------
+
+
+DAY 3
+------------
+
+
