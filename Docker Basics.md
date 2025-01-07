@@ -31,8 +31,8 @@ Docker is an improvement over virtual machines
  - public and private registries.
  - Create own image (dockerfile)
 
-Installing docker on a centos based virtual machine.
-sudo dnf install podman 
+Installing docker on a centos based virtual machine.\
+sudo dnf install podman. 
 
 **Container Registry**: This is a repository where container images are stored. Popular registries include Docker Hub, Quay.io, and Google Container Registry.
 
