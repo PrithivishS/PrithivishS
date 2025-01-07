@@ -3,7 +3,7 @@ Software development before and after docker
   -   Docker is a virtualization software
   -   Makes developing and deploying applications easy
   -     
-- Docker vs Virtual machines.
+###### Docker vs Virtual machines.
 
 Development process before docker 
 ------------------------------------
@@ -18,7 +18,21 @@ Development process after docker
 - Single docker command will start all dependencies including dependent services and configurations for the package.
 - All of the above is acheived in a single command.
 - Command is same for all OS &&.
-- Command same for all services.
+- Command same for all services.\
+
+  In Conclusion docker standardizes process of running any service on any local dev environment. Thereby making it easier and faster to setup the local development environment.
+
+  ###### Deployment Process before containers
+  - Developer will generate an artifact (package) with a set of instructions and hand over to Ops team.
+  - Ops team thereafter will install and configure the application and services.  
+   
+   ###### Deployment Process after containers
+  - Developer creates a package that includes code, dependencies and configuration i.e. this artifact, the docker artifact  includes everything the app needs.
+  - All the information is encapsulated into docker artifact.
+  - Ops team hereafter runs a docker command that will fetch and run the docker artifacts. So the only prerequisite is that docker runtime is running on the server.
+ 
+
+
 
 
 
