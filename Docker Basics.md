@@ -4,6 +4,9 @@ Software development before and after docker
   -   Makes developing and deploying applications easy
   -     
 ###### Docker vs Virtual machines.
+- Overview:  OS is made up of Applications layer and Kernel layer
+- Docker containers virtualize the OS Applications layer. Docker contains the Applications layer of the Operating System and the services and apps that are installed on top of that layer. Docker has no information of the kernel and the intention here is that docker will use the OS kernel of the targetted host.
+- Virtual machines images on the other hand, contain both the OS application layer, and the kernel layer that would run as a part of it on a target host. 
 
 Development process before docker 
 ------------------------------------
@@ -32,22 +35,15 @@ Development process after docker
   - Ops team hereafter runs a docker command that will fetch and run the docker artifacts. So the only prerequisite is that docker runtime is running on the server.
  
 
-
-
-
-
-
-
-
-
-
-
-
-
 Installing docker locally 
 ----------------------------
 Docker is an improvement over virtual machines
  - Images vs containers.
+    - Most of the popular containers are Linux based.
+    - Docker was originally built for Linux.
+    - More recently there is a Docker Desktop that runs on Windows and Mac.
+
+            
  - public and private registries.
  - Create own image (dockerfile)
 
