@@ -14,7 +14,13 @@ Development process before docker
 
 Development process after docker 
 ------------------------------------
-- Docker exports its own environment 
+- Docker exports its own environment
+- Single docker command will start all dependencies including dependent services and configurations for the package.
+- All of the above is acheived in a single command.
+- Command is same for all OS &&.
+- Command same for all services.
+
+
 
 
 
@@ -32,7 +38,23 @@ Docker is an improvement over virtual machines
  - Create own image (dockerfile)
 
 Installing docker on a centos based virtual machine.\
-sudo dnf install podman. 
+sudo dnf install podman.\ 
+
+CLI of docker \
+------------
+###### Pull an Image:\
+
+podman pull ubuntu:latest\
+
+###### Run a Container:
+
+podman run -it ubuntu:latest
+###### List Running Containers:
+
+###### podman ps
+Stop a Container:
+
+###### podman stop <container_id>
 
 **Container Registry**: This is a repository where container images are stored. Popular registries include Docker Hub, Quay.io, and Google Container Registry.
 
