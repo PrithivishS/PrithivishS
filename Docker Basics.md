@@ -42,7 +42,12 @@ Docker is an improvement over virtual machines
     - Most of the popular containers are Linux based.
     - Docker was originally built for Linux.
     - More recently there is a Docker Desktop that runs on Windows and Mac.
-
+    - DockerImages contain the following
+      a. An executable application artifact
+      b. App source code and complete environment configuration
+      c. Environment related instructions to create directories, setup shell paths etc.    
+** Docker Image is an immutable template that defines how a container will be realized **
+** Docker container is a running instance of an image **
             
  - public and private registries.
  - Create own image (dockerfile)
@@ -55,7 +60,9 @@ CLI of docker \
 ###### Pull an Image:\
 
 podman pull ubuntu:latest\
-
+- If the above command is run from **Root user:** imange is stroed in /var/lib/containers/storage
+- If the above command is run from **Non-Root user:** imange is stroed in $HOME/.local/share/containers/storage
+  
 ###### Run a Container:
 
 podman run -it ubuntu:latest
