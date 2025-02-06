@@ -29,6 +29,14 @@ The device type and  the {major #, minor #} pair form a hierarchy.  Devices (and
 The hierarchy is first divided based on device type - block or char. Within that, we have some n major numbers for each type, and each major number is further classified
 via some m minor numbers. 
 
+![image](https://github.com/user-attachments/assets/b848bc6b-c6b2-42d9-bc4e-e9f4b648ed00)
+
+![image](https://github.com/user-attachments/assets/937ed17b-88be-47f5-8063-dd1423ff4a96)
+
+
+
+
+
 
 
 
