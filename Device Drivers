@@ -19,4 +19,18 @@ In order for a user space application to gain access to the underlying device dr
 have  the process open a special type of file  - a **device file, or device node**. This files typically live in the /dev directory, and on modern systems are dynamic and auto populated. 
 The device node serves as an entry point into the device driver.
 
+In order for the kernel to distinguish between device files, it uses two attributes within their intode data structure:
+- The type of file - either character (char) or block 
+- The manjor and minor number. 
+
+The Device Namespace
+---------------------
+The device type and  the {major #, minor #} pair form a hierarchy.  Devices (and thus their drivers) are organized within a tree-like hierarchy with the kernel. 
+The hierarchy is first divided based on device type - block or char. Within that, we have some n major numbers for each type, and each major number is further classified
+via some m minor numbers. 
+
+
+
+
+
 
