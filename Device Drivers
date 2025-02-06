@@ -2,3 +2,12 @@ Driver Methods
 ---------------
 
 A device driver provides several entry points into the kernel. These are **file related system calls** known as drivers' methods. 
+So, we can have an 
+open() method,
+a read() method,
+a write() method, 
+an llseek() method,
+an [unlocked|compat]_ioctl() method,
+a release() method, and so on. 
+
+Refer to **structure: include/linux/fs.h:file_operations* 
