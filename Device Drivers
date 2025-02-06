@@ -1,2 +1,4 @@
 Driver Methods
 ---------------
+
+A device driver provides several entry points into the kernel. These are **file related system calls** known as drivers' methods. 
