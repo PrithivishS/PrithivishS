@@ -10,4 +10,13 @@ an llseek() method,
 an [unlocked|compat]_ioctl() method,
 a release() method, and so on. 
 
-Refer to **structure: include/linux/fs.h:file_operations* 
+Refer to **structure: include/linux/fs.h:file_operations**
+
+Defintion of Device driver: A device is the interface between the OS and a peripheral device. It can be written inline - that is compiled within the kernel image file OR 
+more commonly outside of the kernel source tree as a kernel module. 
+
+In order for a user space application to gain access to the underlying device driver within the kernel, some I/O mechanism is required. The Unix (Linux) design is to
+have  the process open a special type of file  - a **device file, or device node**. This files typically live in the /dev directory, and on modern systems are dynamic and auto populated. 
+The device node serves as an entry point into the device driver.
+
+
